@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Snake Responsive</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Juego de Snake</h1>
+        <canvas id="gameCanvas"></canvas>
+        <div class="score-panel">
+            <p>Puntuación: <span id="score">0</span></p>
+            <p>Vidas: <span id="lives">3</span></p>
+        </div>
+        <div id="game-over" class="hidden">
+            <h2>Game Over</h2>
+            <p>Puntuación final: <span id="final-score">0</span></p>
+        </div>
+        <div class="controls">
+            <button id="up">⬆️</button>
+            <div class="horizontal-controls">
+                <button id="left">⬅️</button>
+                <button id="right">➡️</button>
+            </div>
+            <button id="down">⬇️</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
